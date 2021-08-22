@@ -1,8 +1,8 @@
 {
-  "name": "attila",
+  "name": "curiosityverge",
   "description": "Ghost Theme",
-  "demo": "https://attila.peteramende.de",
-  "version": "3.1.1",
+  "demo": "https://curiosityverge.com",
+  "version": "1.0.0",
   "engines": {
     "ghost": ">=4.0.0",
     "ghost-api": "v4"
@@ -13,9 +13,9 @@
     "mobile": "src/screenshot-mobile.jpg"
   },
   "author": {
-    "name": "Peter Amende",
-    "email": "hey@peteramende.de",
-    "url": "https://peteramende.de"
+    "name": "Alec Stewart",
+    "email": "alec@alecjstewart.com",
+    "url": "https://alecjstewart.com"
   },
   "gpm": {
     "type": "theme",
@@ -31,7 +31,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/zutrinken/attila.git"
+    "url": "https://github.com/alecjstewart/curiosityverge.com.git"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",

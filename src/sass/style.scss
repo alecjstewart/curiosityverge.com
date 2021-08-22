@@ -1422,6 +1422,15 @@ textarea {
 			height: 4rem;
 		}
 	}
+
+    .logo-image {
+        opacity: 1;
+    }
+
+    .logo-image.white {
+        position: absolute;
+        opacity: 0;
+    }
 }
 
 .nav-header ul {
@@ -1717,12 +1726,28 @@ textarea {
 			color: var(--color-content-main);
 		}
 	}
+
+    p {
+        text-align: right;
+        float: right;
+        width: 40%;
+        padding: 0 4rem;
+        font-size: 1.6em;
+        line-height: 2rem;
+        color: var(--color-content-secondary);
+        @media only screen and (max-width: $breakpoint-large) {
+            margin: auto;
+            width: auto;
+            text-align: center;
+            float: none;
+        }
+    }
 }
 
 .nav-footer .nav-wrapper {
 	display: flex;
 	padding: 0 4rem;
-	@media only screen and (max-width: $breakpoint-medium) {
+	@media only screen and (max-width: $breakpoint-large) {
 		flex-direction: column;
 		text-align: center;
 	}
@@ -1735,7 +1760,7 @@ textarea {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	@media only screen and (max-width: $breakpoint-medium) {
+	@media only screen and (max-width: $breakpoint-large) {
 		margin-bottom: 3rem;
 		justify-content: center;
 	}
@@ -1778,14 +1803,14 @@ textarea {
 	color: var(--color-content-secondary);
 	white-space: nowrap;
 
-	@media only screen and (max-width: $breakpoint-medium) {
+	@media only screen and (max-width: $breakpoint-large) {
 		margin-bottom: 3rem;
 	}
 
 	.nav-rss {
 		margin: 0 3rem;
 
-		@media only screen and (max-width: $breakpoint-medium) {
+		@media only screen and (max-width: $breakpoint-large) {
 			margin: 0 0 0 1rem;
 		}
 	}
@@ -1799,8 +1824,9 @@ textarea {
 	line-height: 2rem;
 	color: var(--color-content-secondary);
 
-	@media only screen and (max-width: $breakpoint-medium) {
+	@media only screen and (max-width: $breakpoint-large) {
 		margin-right: auto;
+        margin-bottom: 3rem;
 	}
 
 	a {
@@ -1846,6 +1872,14 @@ textarea {
 		border-radius: 2rem;
 		background: #229;
 	}
+
+    .nav-header .logo .logo-image {
+        opacity: 0;
+    }
+
+    .nav-header .logo .logo-image.white {
+        opacity: 1;
+    }
 }
 
 .theme-light {

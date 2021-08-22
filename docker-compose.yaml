@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+   ghost:
+     container_name: ghost
+     image: ghost:4.11.0
+     volumes:
+       - .:/var/lib/ghost/content/themes/curiosityverge
+     ports:
+       - "3001:2368"
+     restart: unless-stopped
+     environment:
+        url: "https://ghost.home.alecjstewart.com"
+        NODE_ENV: development

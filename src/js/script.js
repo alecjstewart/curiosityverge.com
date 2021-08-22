@@ -266,6 +266,20 @@ jQuery(function($) {
   }
   gallery();
 
+/* ==========================================================================
+   White Logo
+   ========================================================================== */
+
+  function whiteLogo() {
+    'use strict';
+    if (typeof gh_white_logo != 'undefined') {
+      var whiteImage =
+        '<img class="logo-image white" src="' + gh_white_logo + '" alt="Logo">';
+      $('.logo a').prepend(whiteImage);
+    }
+  }
+  whiteLogo();
+
 
 /* ==========================================================================
    Theme
