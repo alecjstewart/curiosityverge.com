@@ -464,12 +464,52 @@ textarea {
 		cursor: pointer;
 	}
 
+    .donate-row {
+        display: flex;
+        flex-flow: row wrap;
+        h2:nth-of-type(2) {
+            margin-top: 4rem;
+        }
+    }
+
+    .donate-title {
+        flex: 0 0 100%;
+    }
+
+    .button-donate {
+        margin: 1rem;
+        flex: 1;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        a {
+            box-shadow: none;
+        }
+
+        img {
+            margin: 0;
+        }
+
+        .logo-image {
+            opacity: 1;
+            width: 75px;
+            min-width: 75px;
+        }
+
+        .logo-image.white {
+            position: absolute;
+            opacity: 0;
+        }
+    }
+
 	input[type="reset"]:hover,
 	input[type="submit"]:hover,
 	input[type="button"]:hover,
 	button:hover,
 	.button:hover {
-
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0 0);
 	}
 
 	input[type="reset"]:focus,
@@ -799,6 +839,76 @@ textarea {
 		height: 100%;
 		object-fit: cover;
 	}
+}
+.gh-subscribe {
+    max-width: 520px;
+    margin: 0 auto;
+    text-align: center;
+    background: #e6e6e6;
+    padding: 2.5rem;
+    margin-bottom: 5rem;
+    .gh-subscribe-title {
+        font-size: 3.6rem;
+        margin-bottom: 0;
+    }
+
+    .gh-subscribe-description {
+        margin: 2.5rem 0;
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+
+    .gh-subscribe-input {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 440px;
+        height: 56px;
+        padding: 0 1.6rem;
+        margin: 0.8rem auto;
+        font-size: 1.6rem;
+        color: #888;
+        background-color: var(--color-background-main);
+        border: 1px solid var(--color-content-lead);
+        border-radius: 6px;
+        box-shadow: none;
+        @media only screen and (max-width: $breakpoint-large) {
+            width: auto;
+            font-size: 1.2rem;
+        }
+    }
+
+    .gh-subscribe-input:hover,
+    .gh-subscribe-input:focus {
+        box-shadow: none;
+    }
+
+    .gh-subscribe-input-text {
+        display: flex;
+        align-items: center;
+    }
+
+    .gh-subscribe-input svg {
+        position: relative;
+        top: 1px;
+        margin-right: 0.8rem;
+    }
+
+    .gh-subscribe-input-btn {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--ghost-accent-color);
+        text-transform: uppercase;
+        letter-spacing: 0.01em;
+    }
+
+    @supports (-moz-appearance: none) {
+        .gh-subscribe-input-btn {
+            position: relative;
+            top: 1px;
+        }
+    }
 }
 /* ==========================================================================
    Header
@@ -1873,11 +1983,13 @@ textarea {
 		background: #229;
 	}
 
-    .nav-header .logo .logo-image {
+    .nav-header .logo .logo-image,
+    .post-content .logo .logo-image {
         opacity: 0;
     }
 
-    .nav-header .logo .logo-image.white {
+    .nav-header .logo .logo-image.white,
+    .post-content .logo .logo-image.white {
         opacity: 1;
     }
 }

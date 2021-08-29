@@ -78,8 +78,8 @@ jQuery(function($) {
           });
 
           try {
-              localStorage.setItem('dawn_search_index', JSON.stringify(index));
-              localStorage.setItem('dawn_search_last', data.posts[0].updated_at);
+              localStorage.setItem('curiosityverge_search_index', JSON.stringify(index));
+              localStorage.setItem('curiosityverge_search_last', data.posts[0].updated_at);
           } catch (e) {
               console.error('Your browser local storage is full. Update your search settings following the instruction at https://github.com/TryGhost/Dawn#disable-content-search');
           }
@@ -292,23 +292,23 @@ jQuery(function($) {
 
     function system() {
       html.removeClass(['theme-dark', 'theme-light']);
-      localStorage.removeItem('attila_theme');
+      localStorage.removeItem('curiosityverge_theme');
       toggleText.text(toggle.attr('data-system'));
     }
 
     function dark() {
       html.removeClass('theme-light').addClass('theme-dark');
-      localStorage.setItem('attila_theme', 'dark');
+      localStorage.setItem('curiosityverge_theme', 'dark');
       toggleText.text(toggle.attr('data-dark'));
     }
 
     function light() {
       html.removeClass('theme-dark').addClass('theme-light');
-      localStorage.setItem('attila_theme', 'light');
+      localStorage.setItem('curiosityverge_theme', 'light');
       toggleText.text(toggle.attr('data-light'));
     }
 
-    switch (localStorage.getItem('attila_theme')) {
+    switch (localStorage.getItem('curiosityverge_theme')) {
       case 'dark':
         dark();
       break;

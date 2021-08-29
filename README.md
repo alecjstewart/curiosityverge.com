@@ -1,10 +1,10 @@
-# Attila
+# Curiosity Verge
 
-A content focused responsive theme for [Ghost](https://github.com/tryghost/ghost/). See a demo at: [attila.peteramende.de](https://attila.peteramende.de/)
+A content focused responsive theme for [Ghost](https://github.com/tryghost/ghost/). See a demo at: [curiosityverge.com](https://curiosityverge.com/)
 
 ## ♥️ Support
 
-Maintaining this project takes a lot of time. You can [buy me a drink](https://paypal.me/zutrinken) if you enjoy using Attila. Cheers 🍻
+Maintaining this project takes a lot of time. You can [buy Peter a drink](https://paypal.me/zutrinken) if you enjoy using this modified Attila theme. Cheers 🍻
 
 ## 📷 Screenshot
 
@@ -81,7 +81,7 @@ Maintaining this project takes a lot of time. You can [buy me a drink](https://p
 3. Add this to __Blog Header__:
 
 ````html
-<script>localStorage.setItem('attila_theme', 'dark');</script>
+<script>localStorage.setItem('curiosityverge_theme', 'dark');</script>
 <style>.js-theme {display:none!important;}</style>
 ````
 
