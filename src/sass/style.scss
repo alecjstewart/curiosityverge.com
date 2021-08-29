@@ -467,6 +467,7 @@ textarea {
     .donate-row {
         display: flex;
         flex-flow: row wrap;
+        margin-bottom: 5rem;
         h2:nth-of-type(2) {
             margin-top: 4rem;
         }
@@ -496,11 +497,17 @@ textarea {
             opacity: 1;
             width: 75px;
             min-width: 75px;
+            @media (prefers-color-scheme: dark) {
+                opacity: 0;
+            }
         }
 
         .logo-image.white {
             position: absolute;
             opacity: 0;
+            @media (prefers-color-scheme: dark) {
+                opacity: 1;
+            }
         }
     }
 
@@ -844,7 +851,7 @@ textarea {
     max-width: 520px;
     margin: 0 auto;
     text-align: center;
-    background: #e6e6e6;
+    background: var(--color-background-contrast);
     padding: 2.5rem;
     margin-bottom: 5rem;
     .gh-subscribe-title {
@@ -868,7 +875,7 @@ textarea {
         padding: 0 1.6rem;
         margin: 0.8rem auto;
         font-size: 1.6rem;
-        color: #888;
+        color: var(--color-content-secondary);
         background-color: var(--color-background-main);
         border: 1px solid var(--color-content-lead);
         border-radius: 6px;
@@ -1535,11 +1542,17 @@ textarea {
 
     .logo-image {
         opacity: 1;
+        @media (prefers-color-scheme: dark) {
+            opacity: 0;
+        }
     }
 
     .logo-image.white {
         position: absolute;
         opacity: 0;
+        @media (prefers-color-scheme: dark) {
+            opacity: 1;
+        }
     }
 }
 
@@ -2008,6 +2021,16 @@ textarea {
 		border-radius: 2rem;
 		background: #FF3;
 	}
+
+    .nav-header .logo .logo-image,
+    .post-content .logo .logo-image {
+        opacity: 1;
+    }
+
+    .nav-header .logo .logo-image.white,
+    .post-content .logo .logo-image.white {
+        opacity: 0;
+    }
 }
 
 .theme-text {}
